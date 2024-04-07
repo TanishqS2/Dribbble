@@ -1,0 +1,318 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.imagePage {
+  display: flex;
+  flex-direction: column;
+  width: 28rem;
+  justify-content: center;
+  align-items: start;
+  background-color: #f2d184;
+  height: 87vh;
+  padding: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.imgText {
+  font-weight: 700;
+  font-style: normal;
+  font-size: xx-large;
+  color: #876317;
+  margin: 20px 10px 80px 28px;
+  padding: 10px;
+}
+
+.dribbbleLogo {
+  filter: invert(100%);
+  height: 2rem;
+  width: 7rem;
+  padding: 10px;
+  margin: 10px 10px 10px 28px;
+}
+
+.section-1 {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+}
+
+.image_peter {
+  height: 25rem;
+}
+
+.image_peter:hover {
+  transform: translateY(-5px);
+}
+
+.Login {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 1.7rem;
+  font-family: "proxima-nova", sans-serif;
+  margin: 0 0 40px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+input,
+button {
+  padding: 8px;
+}
+
+button {
+  background-color: #ea4b8b;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 10rem;
+  height: 2.2rem;
+  border-radius: 10px;
+  color: #f3f3f3;
+  font-weight: bolder;
+}
+
+.createButton {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  margin: 10px;
+  flex-direction: column;
+  width: 17rem;
+}
+
+.createButton p {
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #aaaaae;
+}
+
+.terms label {
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+.disclaimer {
+  font-size: 12px;
+  text-align: center;
+}
+
+.terms {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  color: #7d7c82;
+  width: 25rem;
+}
+
+input {
+  border: none;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  margin: 5px 0 25px 0;
+  padding-left: 20px;
+  height: 1.2rem;
+}
+
+.user {
+  display: flex;
+}
+
+.username {
+  margin: 0 0 0 10px;
+}
+
+.name {
+  margin: 0 10px 0 0;
+}
+
+.links {
+  margin: 0;
+  color: #5445a9;
+  text-decoration: none;
+}
+
+.private {
+  font-family: "proxima-nova", sans-serif;
+  padding: 50px;
+  margin: 20px;
+}
+
+.private h1 {
+  text-align: center;
+  padding: 30px;
+  text-decoration: underline;
+}
+
+.account {
+  color: #f3f3f3;
+  text-decoration: none;
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagePage {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .imgText {
+    font-size: larger;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+  }
+
+  .dribbbleLogo {
+    height: 1.5rem;
+    width: 5rem;
+    padding: 5px;
+    margin: 5px;
+  }
+
+  .image_peter {
+    height: 15rem;
+  }
+
+  .Login {
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  input,
+  button {
+    padding: 6px;
+  }
+
+  button {
+    width: 8rem;
+    height: 2rem;
+  }
+
+  .createButton {
+    width: 100%;
+    align-items: center;
+  }
+
+  .terms {
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  input {
+    padding-left: 10px;
+    height: 1rem;
+  }
+
+  .private {
+    padding: 20px;
+    margin: 10px;
+  }
+}
+
+/* Styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .section-1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .imagePage {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imgText {
+    font-size: x-large;
+    margin: 15px;
+    padding: 8px;
+  }
+
+  .dribbbleLogo {
+    height: 1.8rem;
+    width: 6rem;
+    padding: 8px;
+    margin: 8px;
+  }
+
+  .image_peter {
+    height: 20rem;
+  }
+
+  .Login {
+    max-width: 80%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  input,
+  button {
+    padding: 7px;
+  }
+
+  button {
+    width: 9rem;
+    height: 2.1rem;
+  }
+
+  .createButton {
+    width: 15rem;
+  }
+
+  .terms {
+    width: 20rem;
+    font-size: 0.85rem;
+  }
+
+  input {
+    padding-left: 15px;
+    height: 1.1rem;
+  }
+
+  .private {
+    padding: 30px;
+    margin: 15px;
+  }
+}

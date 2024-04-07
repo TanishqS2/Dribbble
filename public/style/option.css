@@ -1,0 +1,277 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.pinkLogo {
+  height: 2rem;
+  padding: 20px;
+  margin: 10px;
+}
+
+.logo-sec {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.logo-sec button {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.logo-sec button img {
+  filter: invert(40%);
+  padding-top: 3px;
+}
+
+.main-sec {
+  text-align: center;
+}
+
+.main-sec h1 {
+  font-size: 2.15rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.main-sec p {
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #716f7a;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4.5rem 0 0 0;
+}
+
+.border {
+  border: 2px solid #e6e6e6;
+  height: 17rem;
+  padding: 10px;
+  width: 20rem;
+  margin: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.border:hover {
+  border: 3px solid #ea4b8a;
+  border-radius: 30px;
+}
+
+.border h2 {
+  font-size: medium;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border: 0.75px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #ea4b8a;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+.next-btn {
+  background-color: #ea4b8b;
+  border: none;
+  cursor: pointer;
+  margin-top: 50px;
+  width: 12rem;
+  height: 2.2rem;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: #f3f3f3;
+}
+
+#text1,
+#text2,
+#text3 {
+  display: none;
+  font-size: 0.8rem;
+  color: #707070;
+}
+
+.card1 img,
+.card2 img,
+.card3 img {
+  transition: margin-bottom 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(-1rem);
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+  transition: margin-bottom 0.3s ease-in-out;
+  transform: translateY(-1rem);
+}
+
+.card1 #text1,
+.card2 #text2,
+.card3 #text3 {
+  /* Adjust the value as needed */
+  transform: translateY(-1rem); /* Move the image slightly outward */
+}
+
+.card1 h2,
+.card2 h2,
+.card3 h2 {
+  margin-bottom: 10px; /* Adjust the value as needed */
+}
+
+.checkmark {
+  transition: margin-bottom 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(-1rem);
+}
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 767px) {
+  .logo-sec {
+    margin-top: 10px;
+    margin-left: 5px;
+  }
+
+  .pinkLogo {
+    height: 1.5rem;
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .main-sec h1 {
+    font-size: 1.5rem;
+  }
+
+  .main-sec p {
+    font-size: 0.8rem;
+  }
+
+  .cards {
+    flex-direction: column;
+    margin: 2rem 0 0 0;
+  }
+
+  .border {
+    width: 90%;
+    height: auto;
+    margin: 10px 0;
+  }
+
+  .next-btn {
+    width: 10rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+
+  .container {
+    font-size: 18px;
+  }
+
+  .checkmark {
+    height: 20px;
+    width: 20px;
+  }
+
+  .container .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+/* Styles for tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .logo-sec {
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+
+  .pinkLogo {
+    height: 1.8rem;
+    padding: 15px;
+    margin: 8px;
+  }
+
+  .main-sec h1 {
+    font-size: 1.8rem;
+  }
+
+  .main-sec p {
+    font-size: 0.9rem;
+  }
+
+  .cards {
+    margin: 3.5rem 0 0 0;
+  }
+
+  .border {
+    width: 18rem;
+    height: 15rem;
+    margin: 15px;
+  }
+
+  .next-btn {
+    width: 11rem;
+    height: 2.1rem;
+  }
+}
